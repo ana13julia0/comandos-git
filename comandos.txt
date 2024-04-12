@@ -1,0 +1,203 @@
+Claro, vou listar 100 comandos Git junto com uma breve explicação de cada um:
+
+1. **git init**: Inicializa um novo repositório Git local.
+
+2. **git clone [URL]**: Clona um repositório Git existente para o seu computador.
+
+3. **git add [file]**: Adiciona arquivos ao índice (staging area) para prepará-los para o commit.
+
+4. **git commit -m "[mensagem]"**: Registra as alterações feitas nos arquivos adicionados ao índice.
+
+5. **git status**: Mostra o estado atual do repositório Git.
+
+6. **git push**: Envia commits locais para um repositório remoto.
+
+7. **git pull**: Atualiza o repositório local com as alterações do repositório remoto.
+
+8. **git branch**: Lista todas as branches locais presentes no repositório.
+
+9. **git checkout [branch]**: Muda para a branch especificada.
+
+10. **git merge [branch]**: Mescla os commits de uma branch específica na branch atual.
+
+11. **git log**: Exibe o histórico de commits no repositório.
+
+12. **git remote**: Mostra os repositórios remotos associados ao repositório local.
+
+13. **git fetch**: Busca todos os branches de um repositório remoto.
+
+14. **git reset [file]**: Remove um arquivo específico do índice, mas preserva suas alterações.
+
+15. **git reset --hard [commit]**: Reseta o HEAD e o branch atual para o commit especificado.
+
+16. **git diff**: Mostra as diferenças entre os arquivos em sua área de trabalho e a versão mais recente no repositório.
+
+17. **git config**: Configura opções específicas do Git.
+
+18. **git stash**: Salva temporariamente as mudanças locais para que você possa alternar para outra branch ou estado sem fazer commit.
+
+19. **git cherry-pick [commit]**: Aplica as mudanças de um commit específico ao branch atual.
+
+20. **git revert [commit]**: Reverte um commit especificado.
+
+21. **git tag [tagname]**: Cria uma tag para marcar um ponto específico na história do repositório.
+
+22. **git show [commit]**: Exibe informações sobre um commit específico.
+
+23. **git blame [file]**: Mostra quem modificou cada linha de um arquivo e em qual commit a modificação foi feita.
+
+24. **git bisect**: Ajuda a encontrar o commit que introduziu um bug, usando pesquisa binária.
+
+25. **git submodule**: Gerencia submódulos dentro do repositório principal.
+
+26. **git log --graph**: Exibe o histórico de commits em forma de gráfico.
+
+27. **git clean**: Remove arquivos não rastreados do diretório de trabalho.
+
+28. **git revert HEAD**: Reverte o último commit.
+
+29. **git remote -v**: Lista os URLs dos repositórios remotos.
+
+30. **git rm [file]**: Remove um arquivo do controle de versão.
+
+31. **git mv [file-original] [file-renamed]**: Renomeia um arquivo no controle de versão.
+
+32. **git commit --amend**: Adiciona mudanças ao último commit.
+
+33. **git reflog**: Registra todas as operações de referência.
+
+34. **git rebase [branch]**: Reorganiza a história do seu branch atual em relação a outra branch.
+
+35. **git revert --abort**: Aborta um processo de revert que está em andamento.
+
+36. **git reset --soft [commit]**: Desfaz commits até o especificado, preservando as alterações locais.
+
+37. **git reset --mixed [commit]**: Desfaz commits até o especificado, preservando as alterações, mas as colocando no estado "unstaged".
+
+38. **git reset --hard HEAD~1**: Desfaz o último commit e descarta todas as mudanças.
+
+39. **git fetch origin [branch]**: Busca um branch específico do repositório remoto.
+
+40. **git push origin --delete [branch]**: Exclui um branch remoto.
+
+41. **git checkout -b [branch]**: Cria uma nova branch e muda para ela.
+
+42. **git branch -d [branch]**: Exclui uma branch local.
+
+43. **git branch -m [branch]**: Renomeia a branch atual.
+
+44. **git bisect start**: Inicia o processo de bisect para encontrar um bug.
+
+45. **git bisect bad**: Marca o ponto atual como ruim no processo de bisect.
+
+46. **git bisect good [commit]**: Marca um ponto específico como bom no processo de bisect.
+
+47. **git bisect reset**: Reinicia o processo de bisect.
+
+48. **git shortlog**: Resumo condensado de saída de log.
+
+49. **git tag -a [tagname] -m "[mensagem]"**: Cria uma tag anotada para marcar um ponto específico na história do repositório.
+
+50. **git tag -d [tagname]**: Exclui uma tag local.
+
+51. **git push origin [tagname]**: Envia uma tag específica para o repositório remoto.
+
+52. **git push origin --tags**: Envia todas as tags locais para o repositório remoto.
+
+53. **git diff [first-branch]...[second-branch]**: Mostra as diferenças entre duas branches.
+
+54. **git log --pretty=format:"%h - %an, %ar : %s"**: Personaliza o formato de saída do log.
+
+55. **git reflog expire --expire=now --all**: Limpa o reflog.
+
+56. **git gc --prune=now**: Limpa arquivos não necessários e otimiza o banco de dados do Git.
+
+57. **git grep [search_term]**: Procura por um termo específico em todos os arquivos do repositório.
+
+58. **git rev-parse HEAD**: Mostra o SHA-1 do commit HEAD atual.
+
+59. **git archive --format=zip --output=[file.zip] [branch]**: Cria um arquivo zip de um branch específico.
+
+60. **git show-branch**: Exibe branches e seus commits.
+
+61. **git bisect visualize**: Visualiza o progresso do bisect.
+
+62. **git bisect run [script]**: Automatiza o processo de bisect.
+
+63. **git cat-file -p [commit]**: Mostra o conteúdo de um objeto Git.
+
+64. **git ls-tree [commit]**: Lista o conteúdo de uma árvore.
+
+65. **git merge --abort**: Aborta uma mesclagem em andamento.
+
+66. **git rebase --abort**: Aborta um processo de rebase.
+
+67. **git commit --fixup=[commit]**: Cria um commit de fixação referente a um commit anterior.
+
+68
+
+. **git commit --squash=[commit]**: Cria um commit mesclado referente a um commit anterior.
+
+69. **git rebase -i [commit]**: Inicia uma rebase interativa.
+
+70. **git diff HEAD~3**: Mostra as diferenças entre o HEAD atual e três commits atrás.
+
+71. **git blame -L [start],[end] [file]**: Mostra quem modificou as linhas de um arquivo em um intervalo específico.
+
+72. **git log --grep=[pattern]**: Filtra logs por uma determinada mensagem de commit.
+
+73. **git log --author=[author]**: Filtra logs por um autor específico.
+
+74. **git checkout -- [file]**: Descarta as mudanças locais em um arquivo.
+
+75. **git reset HEAD~1**: Desfaz o último commit, mas mantém as mudanças nos arquivos.
+
+76. **git checkout [commit]**: Move HEAD para o commit especificado (não muda de branch).
+
+77. **git stash list**: Lista todas as entradas no stash.
+
+78. **git stash apply [stash_id]**: Aplica um stash específico sem removê-lo da lista.
+
+79. **git stash drop [stash_id]**: Remove um stash específico da lista.
+
+80. **git stash pop**: Aplica e remove o stash mais recente da lista.
+
+81. **git stash clear**: Limpa todos os stashes.
+
+82. **git clean -f**: Remove arquivos não rastreados do diretório de trabalho de forma forçada.
+
+83. **git clean -fd**: Remove arquivos e diretórios não rastreados de forma forçada.
+
+84. **git clean -n**: Mostra quais arquivos e diretórios não rastreados seriam removidos.
+
+85. **git clean -dn**: Mostra quais arquivos e diretórios não rastreados seriam removidos de forma recursiva.
+
+86. **git commit --amend --no-edit**: Adiciona mudanças ao último commit sem alterar a mensagem de commit.
+
+87. **git update-index --assume-unchanged [file]**: Ignora alterações em um arquivo específico.
+
+88. **git update-index --no-assume-unchanged [file]**: Reverte a operação acima.
+
+89. **git bisect visualize --pretty=format:"%h - %an, %ar : %s"**: Visualiza o progresso do bisect com formato personalizado.
+
+90. **git commit --fixup=[commit] --no-edit**: Cria um commit de fixação referente a um commit anterior sem abrir o editor.
+
+91. **git commit --squash=[commit] --no-edit**: Cria um commit mesclado referente a um commit anterior sem abrir o editor.
+
+92. **git rebase -i HEAD~3**: Inicia uma rebase interativa com os últimos três commits.
+
+93. **git remote add [name] [URL]**: Adiciona um repositório remoto com um nome específico.
+
+94. **git remote rm [name]**: Remove um repositório remoto.
+
+95. **git push [remote] --force**: Força o push para um repositório remoto, substituindo o histórico.
+
+96. **git push [remote] --all**: Envia todos os branches locais para um repositório remoto.
+
+97. **git push [remote] --tags**: Envia todas as tags locais para um repositório remoto.
+
+98. **git checkout --track [remote/branch]**: Cria e muda para uma branch local que acompanha uma branch remota.
+
+99. **git checkout -b [branch] [remote/branch]**: Cria uma nova branch local com base em uma branch remota.
+
+100. **git checkout [commit] -- [file]**: Restaura um arquivo específico do commit especificado.
